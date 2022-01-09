@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          <%= title  %>
+        </title>
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/47ca9b07f7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <!-- Navigation bar -->
+        <nav class="navigation-bar">
+          <!-- navigation bar items -->
+            <div class="home"> <a href="#"><h3><i class="fas fa-home"></i> Home</h3></a></div>
+            <div class="about"><a href="#about"><h3>About</h3></a></div>
+            <div class="contact"><a href="#con"><h3> <i class="fas fa-address-book"></i> Contact</h3></a></div>
+            <!-- login dropdown list -->
+            <div class="dropdown">
+                <button class="dropbtn"><h2>Login <i class="fa fa-caret-down"></i></h2>
+                 
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login as Student</a>
+                  <a href="#"onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login as Admin</a>
+                  
+                </div>
+              </div> 
+        </nav>
+        <div class="top-container">
+        <!-- login as student  -->
+        <div id="id01" class="modal">
+  
+          <form class="modal-content animate" action="/action_page.php" method="post">
+
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button class="login-btn" type="submit">Login as Student</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Wanna create a new account?  <a href="/StudentSignup/student" class="clickhere">Sign up</a></span>
+            </div>
+          </form>
+      
+        </div>
+          <!-- login as admin  -->
+           <div id="id02" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+  
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button class="login-btn" type="submit">Login as Admin</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Wanna create a new account?  <a href="/AdminSignup/admin" class="clickhere">Sign up</a></span>
+              </div>
+            </form>
+            <script>
+              // Get the modal
+              var modal = document.getElementById('id02');
+              var modal2 = document.getElementById('id01');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal || event.target== modal2) {
+                      modal.style.display = "none";
+                      modal2.style.display = "none";
+                  }
+              }
+            </script>
+          </div>
+        </div>
+        <div class="top-text">
+          <img src="/img/computer.png" alt="" id="png">
+          <h1 style="font-size:60px" >Online Examination System</h1>
+          <h3>Online Examination System is a web based application totally focused on student evaluation.</h3>
+        </div>
+        <!-- this is a about section  -->
+        <div class="features-container">
+          
+        <div class="feature">
+          <div class="image">
+              <img src="/img/online-test.png" alt="" id="png">
+          </div>
+          <div class="feature-text">
+            <ul>
+              <li><h3>We made conducting exam easier.</h3></li>
+              <li><h3>Scalable and feature rich system.</h3></li>
+              <li><h3> Best fit for entrance/weekly/semester Exams</h3></li>
+            </ul>
+          </div>
+          
+
+        </div>
+
+        <div class="feature" id="about">
+          <div class="image">
+              <img src="/img/examination.png" alt="" id="png">
+          </div>
+          <div class="feature-text">
+            <h2 style="text-align: center;">Feature</h2>
+            <ul>
+              <li><h3>Question bank management.</h3></li>
+              <li><h3> Configuration Of Questions</h3></li>
+              <li><h3>Automated Evaluation</h3></li>
+            </ul>
+          </div>
+          
+
+        </div>
+        <div class="feature">
+          <div class="image">
+              <img src="/img/clipboard.png" alt="" id="png" style="padding-left: 15px;">  
+          </div>
+          <div class="feature-text">
+            
+            <ul>
+              <h2 style="text-align: center;">Scope</h2>
+              <li><h3>Our project aims Buisness process automation</h3></li>
+              <li><h3>We have tried to computarized various procceses of examination management system.</h3></li>
+              
+            </ul>
+          </div>
+          
+
+        </div>
+        </div>  
+
+        <!-- contact section  -->
+        <div class="contact-section" id="con">
+          <div class="contact-heading">
+            <h1 style="font-size: 50px;"><i class="far fa-address-card"></i> Contact Us</h1>
+          </div>
+          <div class="contact-container">  
+              <div class="address">
+                <div class="contact-png">
+                    <img src="/img/address.png" alt="" id="png2">
+                </div>
+                <div>
+                  <h4 style="font-style: oblique;">Newdoor hostel,Manipal University Jaipur Rajasthan 303007</h4>
+    
+                </div>
+              </div>
+              <div class="phone">
+                <div class="contact-png">
+                  <img src="/img/phone.png" alt="" id="png2">
+              </div>
+              <div class="phone-no">
+                  <h3 style="font-style: oblique;">1010101010</h3>
+              </div>
+              </div>
+
+              <div class="email">
+              <div class="contact-png">
+                <img src="/img/email.png" alt="" id="png2">
+              </div>
+              <div class="EMAIL-ID">
+              <h3 style="font-style: oblique;">ONLINEexam@gmail.com</h3>
+              </div>
+          </div>
+          </div>
+              
+      </div>
+        
+    </body>
+</html>
+
+
+<!-- div class="hero-text">
+          <img src="/img/computer.png" alt="" id="png">
+          <h1 style="font-size:60px">Online Examination System </h1> 
+          <h3>Online Examination System is a web based application totally focused on student evaluation.</h3> 
+        </div> -->
