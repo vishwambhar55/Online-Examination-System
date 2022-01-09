@@ -8,9 +8,10 @@ body{
   /* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
   /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
   /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
-  background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #C9D6FF;  
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+/* background-color: F5F5F5; */
 
 }
 .mid-section{
@@ -20,11 +21,20 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
   justify-content: center;
 
 }
+#png1{
+  height: 400px;
+  width : 550px;
+  margin-top: -70px;
+  margin-bottom: -50px;
+}
+#png1 h1{
+  margin-top: -70px;
+}
 #png{
   height: 150px;
 }
 .top-text{
-  margin-top: 150px;
+  margin-top: 120px;
   text-align: center;
   
 }
@@ -222,7 +232,7 @@ input[type=text], input[type=password] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
+  
  
 
 }
@@ -257,10 +267,9 @@ input[type=text], input[type=password] {
 .contact-section{
   /* background-image:
    linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
-   background: #FC5C7D;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+   background: #FC5C7D;  
+background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+background: linear-gradient(to right, #6A82FB, #FC5C7D); 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
