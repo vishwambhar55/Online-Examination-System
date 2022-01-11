@@ -1,7 +1,6 @@
 body{
-	background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+	background: #11101d  /* fallback for old browsers */
+
 }
 .container{
     display: flex;
@@ -21,6 +20,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF);
 	font-size: 40px;
 	text-align:center;
 	font-family: 'Helvetica', serif;
+	color: #11101d;
 	
 }
 input{
@@ -36,7 +36,8 @@ input{
 input[type=submit] {
 	font-family: 'Helvetica', serif;
 	width: 100%;
-	background-color: #10cc4e;
+	background-color: #F05454;
+	font-size: 20px;
 	border: none;
 	color: black;
 	padding: 16px 32px;

@@ -8,40 +8,41 @@ body{
   /* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
   /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
   /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
-  background: #C9D6FF;  
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
-background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+  /* background: #C9D6FF;   */
+  /* background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
+  background: linear-gradient(to right, #E2E2E2, #C9D6FF);  */
 /* background-color: F5F5F5; */
+background: white;
+color: #2D295D;
+/* color: #f44336; */
+
 
 }
-.mid-section{
-  display: flexbox;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
 
-}
 #png1{
+
   height: 400px;
   width : 550px;
   margin-top: -70px;
-  margin-bottom: -50px;
+  margin-bottom: 50px;
 }
-#png1 h1{
+/* #png1 h1{
   margin-top: -70px;
-}
+} */
 #png{
   height: 150px;
 }
 .top-text{
-  margin-top: 120px;
+  /* display: flex; */
+  margin-top: 190px;
   text-align: center;
+  /* align-items: center; */
   
 }
 
 nav{
   
-  box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+  /* box-shadow: 10px 10px 5px rgba(0,0,0,0.5); */
 } 
   
   
@@ -49,35 +50,53 @@ nav{
   /* background: #FFEFBA;  fallback for old browsers */
   /* background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  Chrome 10-25, Safari 5.1-6 */
   /* background: linear-gradient(to right, #FFFFFF, #FFEFBA); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
-	height: auto;
-	width: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-items: center;
-	box-sizing: border-box; 
-	/* padding-left: 5%; */
-  /* padding-left: 10px;
-  padding-right: 10px; */
-	/* padding-right: 2%; */
+  background: #11101d;
+	/* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0px;
+padding-top: 0px;
+padding-bottom:0px;
 
   
 }
 .navigation-bar>div{
-  margin-left: 40px;
+  float: right;
+  /* display: block; */
+  /* color: #f2f2f2; */
+  text-align: center;
+  padding-left: 30px ;
+  text-decoration: none;
+  
+  /* font-size: 17px; */
+
+
   
 }
+/* .navigation-bar a:hover {
+  background: #11101d;
+  color:#fff;
+} */
+/* .navigation-bar i{
+  color: #f9f9f9;
+}
+.navigation-bar  h3{
+  color: #fff;
+}
+.navigation-bar  h2{
+  color: #fff;
+} */
 a{
   text-decoration: none;
-  color: black;
+  color: #F5F5F5
 }
-a:hover{
-  color: red;
+.navigation-bar div a:hover{
+
+  color: #F05454
 }
 .dropdown {
+  
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
@@ -89,7 +108,7 @@ a:hover{
 
   border: none;
   outline: none;
-  color: black;
+  color:#fff;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -97,11 +116,12 @@ a:hover{
 }
 
  .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #F05454;
   border-radius: 6px;
 }
 
 .dropdown-content {
+  /* margin-top: 10px; */
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -213,13 +233,14 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 .login-btn{
-  background-color: #04AA6D;
+  background-color: #11101d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 12px;
 }
 .clickhere{
   color: blue;
@@ -267,12 +288,15 @@ input[type=text], input[type=password] {
 .contact-section{
   /* background-image:
    linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); */
-   background: #FC5C7D;  
+   /* background: #FC5C7D;  
 background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
-background: linear-gradient(to right, #6A82FB, #FC5C7D); 
+background: linear-gradient(to right, #6A82FB, #FC5C7D);  */
+background: #11101d;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #F5F5F5;
+  
   
 }
 .contact-heading{
@@ -294,7 +318,7 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D);
   justify-content: center;
   padding-left: 15%;
   padding-right: 15%;
-  
+  padding-bottom: 60px;
 }
 .address{
   display: flex;
@@ -339,6 +363,18 @@ background: linear-gradient(to right, #6A82FB, #FC5C7D);
   height: 60px;
   width: 60px;
 }
+.footer{
+  position: fixed;
+  /* position: relative; */
+  padding: 0px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#11101d;
+   color: white;
+   text-align: center;
+}
+
 
 
 
