@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/47ca9b07f7.js" crossorigin="anonymous"></script>
 </head>
@@ -58,13 +58,15 @@
                 <div class="profile_details">
                     <img src="" alt="">
                     <div class="name_job">
-                        <div class="name">Student</div>
-                        <div class="job">Department</div>
+                        <div class="name"><%= user.name %></div>
+                        <!-- <div class="job">Department</div> -->
                     </div>
                 </div>
-                <button type="submit">
-                <i class='bx bx-log-out' id="log_out"></i>
-                </button>
+                <a href="/StudentSignup/sign-out">
+					<button class="signout">
+						<i class='bx bx-log-out' id="log_out"></i>
+					</button>
+				</a>
             </div>
         </div>
 	</div>

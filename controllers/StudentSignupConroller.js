@@ -1,10 +1,25 @@
-const User = require("../modals/UserStudent");
+const User = require("../modals/susers");
 module.exports.student = function(req, res){
     
     return res.render('student.ejs', {
         title: "Student Registration"
     });
 }
+module.exports.Signin = function(req, res){
+    
+    return res.render('StudentLogin.ejs', {
+        title: "Student Login",
+        heading: "Student Login"
+    });
+}
+
+module.exports.StudentHome = function(req, res){
+    
+    return res.render('studentHome.ejs', {
+        title: "Home"
+    });
+}
+
 module.exports.Create = function(req, res){
     if(req.body.password != req.body.confirm_password){
         res.redirect('back');
@@ -24,4 +39,11 @@ module.exports.Create = function(req, res){
         }
 
     });
+}
+module.exports.createSession = function(req, res){
+    return res.redirect('/StudentSignup/studentHome');
+}
+module.exports.destroySession = function(req,res){
+    req.logout();
+    return res.redirect('/');
 }

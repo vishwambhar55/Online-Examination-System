@@ -144,3 +144,8 @@ button i{
     text-align: center;
     color: #fff;
 }
+
+.signout i:hover{
+    color: #F05454;
+    /* transform: scale(1.5); */
+}

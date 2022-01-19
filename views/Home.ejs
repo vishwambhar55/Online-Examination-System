@@ -25,8 +25,8 @@
                  
                 </button>
                 <div class="dropdown-content">
-                  <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login as Student</a>
-                  <a href="#"onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login as Admin</a>
+                  <a href="StudentSignup/sign-in"  style="width:auto;">Login as Student</a>
+                  <a href="AdminSignup/sign-in"  style="width:auto;">Login as Admin</a>
                   
                 </div>
               </div> 
@@ -35,75 +35,10 @@
               <div class="home"> <a href="#"><h3><i class="fas fa-home"></i> Home</h3></a></div>
 
         </nav>
-        <div class="top-container">
-        <!-- login as student  -->
-        <div id="id01" class="modal">
-  
-          <form class="modal-content animate" action="/action_page.php" method="post">
-
-        
-            <div class="container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-        
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-                
-              <button class="login-btn" type="submit">Login as Student</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-        
-            <div class="container" style="background-color:#f1f1f1">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-              <span class="psw">Wanna create a new account?  <a href="/StudentSignup/student" class="clickhere">Sign up</a></span>
-            </div>
-          </form>
-      
-        </div>
-          <!-- login as admin  -->
-           <div id="id02" class="modal">
-  
-            <form class="modal-content animate" action="/action_page.php" method="post">
-  
-          
-              <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-          
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                  
-                <button class="login-btn" type="submit">Login as Admin</button>
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-              </div>
-          
-              <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Wanna create a new account?  <a href="/AdminSignup/admin" class="clickhere">Sign up</a></span>
-              </div>
-            </form>
-            <script>
-              // Get the modal
-              var modal = document.getElementById('id02');
-              var modal2 = document.getElementById('id01');
-              
-              // When the user clicks anywhere outside of the modal, close it
-              window.onclick = function(event) {
-                  if (event.target == modal || event.target== modal2) {
-                      modal.style.display = "none";
-                      modal2.style.display = "none";
-                  }
-              }
-            </script>
-          </div>
-        </div>
+   
         <!-- <div class="body"> -->
         <div class="top-text">
-          <img src="/img/Lets Quiz.png" alt="" id="png1">
+          <img src="/img/Let's Quiz Logo (6) (1) (1).png" alt="" id="png1">
           <!-- <h1 style="font-size:90px; font-family: 'Dosis', sans-serif; color: rgb(67, 216, 201) ;" >Let's Quiz</h1> -->
           <!-- <h1 style="font-size:70px " >Online Examination System</h1> -->
           <!-- <h3 style="font-size:20px;font-family: 'Pacifico', cursive; ; display: inline; ">Let's Quiz</h3> -->
