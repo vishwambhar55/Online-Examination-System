@@ -17,7 +17,29 @@ const StudentuserSchema = new mongoose.Schema({
     phone: {
         type: Number,
         required: true
+    },
+    outlook: {
+        type: String
+    },
+    registration: {
+        type: Number
+    },
+    batch: {
+        type: Number
+    },
+    address: {
+        type: String
+    },
+    city: {
+        type: String
+    },
+    state: {
+        type: String
+    },
+    country: {
+        type: String
     }
+
 },{
     timestamps: true
 });

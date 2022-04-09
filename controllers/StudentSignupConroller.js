@@ -18,8 +18,22 @@ module.exports.StudentHome = function(req, res){
     return res.render('studentHome.ejs', {
         title: "Home"
     });
+   
 }
-
+module.exports.StudentHomedash = function(req, res){
+    
+    return res.render('dash.ejs', {
+        title: "Home"
+    });
+   
+}
+module.exports.StudentHomeprofile = function(req, res){
+    
+    return res.render('profile.ejs', {
+        title: "Home"
+    });
+   
+}
 module.exports.Create = function(req, res){
     if(req.body.password != req.body.confirm_password){
         res.redirect('back');

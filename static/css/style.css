@@ -11,8 +11,8 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
-    background-color: F5F5F5;
+    /* overflow: hidden; */
+    background-color: #F5F5F6;
 
 }
 .sidebar{
@@ -72,10 +72,12 @@ body{
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 12px;
+    cursor: pointer;
 }
 .sidebar ul li a:hover{
     color: #11101d;
     background: #fff;
+    cursor: pointer;
 }
 .sidebar ul li i{
     height: 50px;
@@ -148,4 +150,7 @@ button i{
 .signout i:hover{
     color: #F05454;
     /* transform: scale(1.5); */
+}
+.result{
+    overflow-x: scroll;
 }

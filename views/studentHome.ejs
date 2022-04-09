@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>
+		<%= title %>
+	</title>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet"  type="text/css" href="/css/dash.css">
 	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/47ca9b07f7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ff8a8ba3fb.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -18,14 +22,14 @@
 		</div>
 		<ul class="nav_list">
 			<li>
-				<a href="#">
+				<a id="dash">
 					<i class='bx bx-grid-alt' ></i>
 					<span>Dashboard</span>
 				</a>
                 <!-- <span class="tooltip">Dashboard</span> -->
 			</li>
             <li>
-				<a href="#">
+				<a id="profile" >
 					<i class="fas fa-user-graduate"></i>
 					<span>Profile</span>
 				</a>
@@ -70,10 +74,47 @@
             </div>
         </div>
 	</div>
-    <script>
-        // let btn = document.querySelector("#btn");
-        // let Sidebar = document.querySelector(".sidebar");
-        
-    </script>
+	<div class="result">
+
+	</div>
+	<script>
+		var size = [window.width,window.height];  //public variable
+
+		$(window).resize(function(){
+		window.resizeTo(size[0],size[1]);
+		});
+		$(document).ready(function () {
+			$('#dash').click(function () {
+				$('.result').load('/StudentSignup/studentHome/dash');
+			});
+			$('#profile').click(function () {
+				$('.result').load('/StudentSignup/studentHome/profile');
+			});
+		});
+		$(window).blur(function() {
+   			window.close();
+		});
+
+		function disableSelection(target){
+    		$(function() {
+         		$(this).bind("contextmenu", function(e) {
+             e.preventDefault();
+         	});
+        }); 
+		if (typeof target.onselectstart!="undefined") //For IE 
+			target.onselectstart=function(){return false}
+		else if (typeof target.style.MozUserSelect!="undefined") //For Firefox
+			target.style.MozUserSelect="none"
+		else //All other route (For Opera)
+			target.onmousedown=function(){return false}
+		target.style.cursor = "default";
+		}
+		$(document).ready(function(){
+			disableSelection(document.body);
+		});
+	</script>
+
+
+
 </body>
 </html>

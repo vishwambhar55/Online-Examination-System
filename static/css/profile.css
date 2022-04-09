@@ -1,0 +1,198 @@
+:root {
+    --gray: #8898aa;
+    --gray-dark: #32325d;
+    --light: #e8edf1;
+    --blue: #5e72e4;
+  --indigo: #5603ad;
+  --purple: #8965e0;
+  --pink: #f3a4b5;
+  --red: #f5365c;
+  --orange: #fb6340;
+  --yellow: #ffd600;
+  --green: #2dce89;
+  --teal: #11cdef;
+  --cyan: #2bffc6;
+  --white: #fff;
+
+
+  --primary: #5e72e4;
+  --secondary: #f7fafc;
+  --success: #2dce89;
+  --info: #11cdef;
+  --warning: #fb6340;
+  --danger: #f5365c;
+  --default: #172b4d;
+  --white: #fff;
+  --neutral: #fff;
+} 
+input{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder { 
+    color:grey;
+    /* opacity: 0.7;  */
+  }
+label{
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    font-size:large
+}
+body{
+    margin: 0px;
+    color: var(--gray-dark);
+}
+.heading{
+    margin-left:450px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 450px;
+    padding: 5vh;
+    width: 750px;
+    background-color: var(--light);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+.profile-container .name-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+.name-container .email-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+}
+.email-container input{
+    /* height: 30px; */
+    /* width: 620px; */
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+.name-container .contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /* padding-top: 1vh; */
+}
+
+.contact-container input{
+    /* height: 30px; */
+    width: 275px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+.contact-container .name{
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .mob{
+    display: flex;
+    flex-direction: column;
+}
+
+.address-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+}
+.address-container .address{
+    display: flex;
+    flex-direction: column;
+    
+    padding-bottom: 2vh;
+}
+
+.address input{
+    /* height: 30px; */
+    /* width: 620px; */
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+ .address-container .city-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin-top: 1vh;
+ }
+ .city-container input{
+     /* height: 30px; */
+     width: 200px;
+     outline: none;
+     border: none;
+     border-radius: 6px;
+ }
+ .city-container .city, .state, .country{
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .student-info{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+ }
+ .student-info .outlook{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vh;
+ }
+ .student-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1vh;
+ }
+ .student-details .registration, .batch{
+    display: flex;
+    flex-direction: column;
+ }
+ .student-details input{
+    width: 275px;
+ }
+ .INPUT{
+    font-size: large;
+    padding-left: 12px;
+    color: gray;
+  }
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+    padding-left: 1vw;
+}
+#submitDetails {
+   width: 250px;
+   font-size: large;
+   background-color: var(--primary);
+   color: var(--white);
+}
+hr{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+ 
+ 

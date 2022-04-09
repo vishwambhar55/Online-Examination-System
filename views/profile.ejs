@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/profile.css">
+	<title></title>
+</head>
+<body>
+    <div class="heading">
+        <h1>My profile</h1>
+    </div>
+    <div class="profile-container">
+        
+        <div class="profile">
+            <form action="">
+                
+                <div class="name-container">
+                    <div class="email-container">
+                        <Label for="email"><b>Email  </b></Label>
+                        <input type="email" class="INPUT" name="email" id="" placeholder="<%= user.email%>" disabled >
+                    </div>
+                    <div class="contact-container">
+                       <div class="name">
+                            <Label for="name"><b>Name </b></Label>
+                            <input type="text" class="INPUT" name="name" id="name" placeholder="<%= user.name%>" disabled>
+                       </div>
+                       <div class="mob">
+                            <label for="contact"><b>Contact</b></label>
+                            <input type="number"class="INPUT"  name="contact" id="contact" placeholder="<%= user.phone%>" disabled>
+                       </div>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="student-info">
+                    <div class="outlook">
+                        <Label for="outlook"><b>Outlook-Id </b></Label>
+                        <input type="email" name="outlook" class="INPUT" placeholder="college email id" value="<%= user.outlook%>"> 
+                    </div>
+
+                    <div class="student-details">
+                        <div class="registration">
+                            <label for="registration-no"><b>Registration No</b></label>
+                            <input type="number" class="INPUT" name="registration-no" placeholder="Registration No">
+                        </div>
+                        <div class="batch">
+                            <label for="batch"><b>Batch</b></label>
+                            <input type="number" class="INPUT" name="batch" id="" placeholder="Batch"> 
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="address-container">
+                    <div class="address">
+                        <Label for="address"><b>Address  </b></Label>
+                        <input type="text" class="INPUT" name="address" placeholder="Address">
+                    </div>
+                    <div class="city-container">
+                        <div class="city">
+                            <Label for="city"><b>City  </b></Label>
+                            <input type="text" class="INPUT" name="city" placeholder="city">
+                        </div>
+                        <div class="state">
+                            <Label for="state"><b>State </b></Label>
+                            <input type="text" class="INPUT" name="state" placeholder="State">
+                        </div>
+                        <div class="country">
+                            <Label for="country"><b>Country  </b></Label>
+                            <input type="text" class="INPUT" name="country" placeholder="Country">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" id="submitDetails" name="submitDetails" value="Click to save changes " />
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
